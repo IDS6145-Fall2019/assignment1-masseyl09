@@ -11,5 +11,5 @@ a real system)
 
 
 Class Diagram
-![POTS system](../../images/POTS_classdiagram.jpeg)
+![POTS system](../../images/POTS_classdiagram.png)
 more decription
