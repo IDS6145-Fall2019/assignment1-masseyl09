@@ -10,7 +10,7 @@ y_A = [x[1] for x in prA]
 plt.scatter(x_A, y_A, s=1, marker=",")
 plt.ylabel("Pseudorandom\nNumber Generation")
 plt.title("N=100")
-
+plt.xticks([])
 
 plt.subplot(252)
 prB = [(random(), random()) for _ in range(500)]
@@ -19,7 +19,7 @@ y_B = [x[1] for x in prB]
 plt.scatter(x_B, y_B, s=1, marker=",")
 plt.title("N=500")
 plt.yticks([])
-
+plt.xticks([])
 
 plt.subplot(253)
 prC = [(random(), random()) for _ in range(1000)]
@@ -28,6 +28,7 @@ y_C = [x[1] for x in prC]
 plt.scatter(x_C, y_C, s=1, marker=",")
 plt.title("N=1000")
 plt.yticks([])
+plt.xticks([])
 
 plt.subplot(254)
 prD = [(random(), random()) for _ in range(2000)]
@@ -36,6 +37,7 @@ y_D = [x[1] for x in prD]
 plt.scatter(x_D, y_D, s=1, marker=",")
 plt.title("N=2000")
 plt.yticks([])
+plt.xticks([])
 
 plt.subplot(255)
 prE = [(random(), random()) for _ in range(5000)]
@@ -44,6 +46,7 @@ y_E = [x[1] for x in prE]
 plt.scatter(x_E, y_E, s=1, marker=",")
 plt.title("N=5000")
 plt.yticks([])
+plt.xticks([])
 
 plt.subplot(256)
 qrA=sobol_seq.i4_sobol_generate(2,100)
