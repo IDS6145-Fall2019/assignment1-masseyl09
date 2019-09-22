@@ -1,4 +1,4 @@
-# Assignment 1 - Designing Models and Analyzing Data (Template)
+# Assignment 1 - Designing Models and Analyzing Data 
 (remove: **text between brackets to be removed**)
 
 > * Participant name: Lauren Massey
@@ -15,32 +15,30 @@ The second part of the assignment explores data analysis. Data analysis and visu
 
 # Part 1: Designing a Model - Subway System
 
-New York City has an estimated population of 8,398,748, as of July 2018, that live within 306 square miles [1][2]. This creates a population desnisty of about 27,443.06 people per square mile][2]. The resulting congested streets of NYC have lead to the usage of an underground subway system. This subway system is a common way to travel efficently through the NYC and consists of 472 stations that serve 27 subway lines [2]. It is estimated that the average day rideship for the NYC subways system is 5,437,587 people[4]. The US Census Bureau estimates that NYC's population will continue to grow at a rate of 3% each year or approximately a population growth os 27,000 persons[1]. This evergrowing population will consquently put more demand on the NYC subway system. 
+New York City has an estimated population of 8,398,748, as of July 2018, that live within 306 square miles [1][2]. This creates a population desnisty of about 27,443.06 people per square mile][2]. The resulting congested streets of NYC have lead to the usage of an underground subway system. This subway system is a common way to travel efficently through the NYC and consists of 472 stations that serve 27 subway lines [2]. It is estimated that the average day rideship for the NYC subways system is 5,437,587 people[4]. The US Census Bureau estimates that NYC's population will continue to grow at a rate of 3% each year or approximately a population growth os 27,000 persons[1]. This evergrowing population will consquently put more demand on the NYC subway system.
 
-Of the 
+The NYC subway system uses escalators to transport riders to and from the underground platforms. Of the 472 stations, 59 have escalators[5]. The direction of an escalator at a certain time can reduce the congestion a station may expereince, especially during rush hour. With the increasing popultion of riders in NYC, usage of these escalators need to be optimatized to ensure efficent transportation through the NYC subway system. A discrete-simualtion of rideship at stations with escalators could be used to model the direction of escalators and throughput of riders. This practice of changing the direction of the escalators is not uncommon and is used often when peak transit of people will be going in the same directions, such as exiting a sport stadium after a game.
 
+The Metropolitan Transportation Authority (MTA) generates data multiple times a day on the amount of riders that have entered and exited a certain station via the turnstiles[5]. The data is collected nine times a day: 12am, 4am, 8am, 12pm, 4pm, 8pm. This data will be useful in the simualtion to know the throughput at subway stations at certain time intervals.
+![Image of Subway City System](images/subway_turn.png)[6]
 
-
-
-
-(remove: States your motivation clearly: why is it important / interesting to solve this problem?)
-
-(remove: Add real-world examples, if any)
-
-(remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
+Also, MTA produces performance data about the percentage of time each escalator is fully functioning[5].  This can be used to simulate the strain of travel when an escalator is down and what should be done with the remaining escalators at that station [5].
+![Image of Subway City System](images/escalator.png)[7]
 
 #####References
 1. https://www1.nyc.gov/site/planning/planning-level/nyc-population/current-future-populations.page
 2. https://www.newworldencyclopedia.org/entry/New_York_City
 3. http://web.mta.info/nyct/subway/howto_sub.htm
 4. http://web.mta.info/nyct/facts/ridership/
- 
+5. http://web.mta.info/developers/developer-data-terms.html#data
+6. https://truthout.org/articles/arrested-for-jumping-a-turnstile-how-new-york-city-punishes-the-poor/
+7. https://thecity.nyc/2019/07/nycs-second-avenue-subway-escalators-fail-to-rise-report.html
 
-
-![Image of Subway City System](images/subway_model.png)
-![Image of Subway City System](images/subway_turn.png)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
+####Problem
+The throughput of riders in the NYC subway system can get congested at certain time intervals in a day. Optimizing the direction of the subway escalators may alleviate some of the congestion by providing more paths in a desired direction during peak hours. 
+####Requirements
 
 (remove: You should start by specifying a set of requirements. I specified a topic a Subway escalator. What exactly does that mean - practice formulating your own set of requirements and an experiment. Define problems cities face and hypothesize how a subway system could help alleviate these issue. This helps you think about your problem communication and system objectives inputs, functions, and outputs - they should be clearly specified.)
 
