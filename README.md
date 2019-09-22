@@ -20,12 +20,14 @@ New York City has an estimated population of 8,398,748, as of July 2018, that li
 The NYC subway system uses escalators to transport riders to and from the underground platforms. Of the 472 stations, 59 have escalators[5]. The direction of an escalator at a certain time can reduce the congestion a station may expereince, especially during rush hour. With the increasing popultion of riders in NYC, usage of these escalators need to be optimatized to ensure efficent transportation through the NYC subway system. A discrete-simualtion of rideship at stations with escalators could be used to model the direction of escalators and throughput of riders. This practice of changing the direction of the escalators is not uncommon and is used often when peak transit of people will be going in the same directions, such as exiting a sport stadium after a game.
 
 The Metropolitan Transportation Authority (MTA) generates data multiple times a day on the amount of riders that have entered and exited a certain station via the turnstiles[5]. The data is collected nine times a day: 12am, 4am, 8am, 12pm, 4pm, 8pm. This data will be useful in the simualtion to know the throughput at subway stations at certain time intervals.
+
 ![Image of Subway City System](images/subway_turn.png)[6]
 
 Also, MTA produces performance data about the percentage of time each escalator is fully functioning[5].  This can be used to simulate the strain of travel when an escalator is down and what should be done with the remaining escalators at that station [5].
+
 ![Image of Subway City System](images/escalator.png)[7]
 
-#####References
+References
 1. https://www1.nyc.gov/site/planning/planning-level/nyc-population/current-future-populations.page
 2. https://www.newworldencyclopedia.org/entry/New_York_City
 3. http://web.mta.info/nyct/subway/howto_sub.htm
