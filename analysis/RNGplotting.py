@@ -83,5 +83,7 @@ y_J = [x[1] for x in qrE]
 plt.scatter(x_J, y_J, s=1, marker=",")
 plt.yticks([])
 
+
+
 plt.savefig('RNG.png')
 plt.show()

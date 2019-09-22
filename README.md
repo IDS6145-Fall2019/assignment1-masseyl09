@@ -15,14 +15,30 @@ The second part of the assignment explores data analysis. Data analysis and visu
 
 # Part 1: Designing a Model - Subway System
 
+New York City has an estimated population of 8,398,748, as of July 2018, that live within 306 square miles [1][2]. This creates a population desnisty of about 27,443.06 people per square mile][2]. The resulting congested streets of NYC have lead to the usage of an underground subway system. This subway system is a common way to travel efficently through the NYC and consists of 472 stations that serve 27 subway lines [2]. It is estimated that the average day rideship for the NYC subways system is 5,437,587 people[4]. The US Census Bureau estimates that NYC's population will continue to grow at a rate of 3% each year or approximately a population growth os 27,000 persons[1]. This evergrowing population will consquently put more demand on the NYC subway system. 
+
+Of the 
+
+
+
+
+
 (remove: States your motivation clearly: why is it important / interesting to solve this problem?)
 
 (remove: Add real-world examples, if any)
 
 (remove: Put the problem into a historical context, from what does it originate? Are there already some proposed solutions?)
 
+#####References
+1. https://www1.nyc.gov/site/planning/planning-level/nyc-population/current-future-populations.page
+2. https://www.newworldencyclopedia.org/entry/New_York_City
+3. http://web.mta.info/nyct/subway/howto_sub.htm
+4. http://web.mta.info/nyct/facts/ridership/
+ 
+
 
 ![Image of Subway City System](images/subway_model.png)
+![Image of Subway City System](images/subway_turn.png)
 
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
 
