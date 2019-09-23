@@ -77,7 +77,21 @@ The throughput of riders in the NYC subway system can get congested at certain t
 
 ## (Part 1.3) Subway (My Problem) Simulation **(10%)**
 
-(remove: Describe how you would simulate this - including type of simulation, rough details, inputs, outputs, and how it will help you analyze your experimental hypothesis, or nullify your null hypothesis.)
+**Type of Simualtion**
+Discrete Simulation
+
+**Inputs**
+* MTA generates data multiple times a day on the amount of riders that have entered and exited a certain station via the turnstiles[5]. The data is collected nine times a day: 12am, 4am, 8am, 12pm, 4pm, 8pm. This data will be useful in the simualtion to know the throughput at subway stations at certain time intervals.
+* MTA provides information about which station have escalators. This will lower the scope of which station's to simulate by removing those without escalators.
+* MTA produces performance data about the percentage of time each escalator is fully functioning[5].  This can be used to simulate the strain of travel when an escalator is down and what should be done with the remaining escalators at that station [5].
+
+**Outputs**
+* Average amount of time a patron takes to transit through the simulation at various times of the day.
+* Average amount of  patrons on the escalator at a given time.
+* Average length of wait time to get onto the escalator at various times of the day.
+
+**Analyzation of the Simulation**
+Overall, the goal is the increase the throughput of the stations by optimizing the usage of the escalators. Based on the amount of time a patron takes to transit through the simulation will indicate if changing the direction of the ecalators based on demand and the placement of patrons on the escalatos makes a difference.
 
 
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**
@@ -108,24 +122,64 @@ Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortabl
 # Part 3: Data Analysis
 
 ## (Part 3.1) - Real Data **(10%)**
+Two data files have been found for this simulation both were found from the [MTA Real Time Data Feeds.](http://web.mta.info/developers/developer-data-terms.html#data "MTA Data Page")
 
-Find a datasource that looks at part of this model - subway stations locations / escalator number, heights, widths / volume of passangers - ridership numbers   (*fits* - we are pretty loose here, it can be anything.)
 
-* Write up a paragraph that describes the data and how it fits into your system.
-* Load the data into Python
-* Calculate a few useful statistic on the data - keep it simple- STD, means, etc..., this is just designed * to get used to working with real data. Explain the insights you derive from these statistics.
-* Visualize the raw data - visualize a few critical aspects of the data to better describe what it is, what it is showing, and why its useful to your system.
-* Calculate and plot some summary statistics that better describe the data.
+**Turnstile Data**
+This data in txt formats that are automatically created eight times a day and upload to the website linked above. Each data file consists of several data types, however after reviewing the raw data, I decided on to only use the following columns from the txt files:
 
-(Add your plots and visualization here)
-(Put your data into the data directory)
+| Data    | Type         | Description                                       |
+|:--------|:-------------|:-----------------------------------------------   |
+|Station  | string        |Indicates what station the data was collected at. |
+|Date     | datetime      |Date of data collected                            |
+|Time     | datetime      |Time of data collected                            |
+|Entries  | double        |Amount of entries since last data collection      |
+|Exits    | double        |Amount of exits since the last data collection    |
+
+.
+
+
+**Escalator Performanace Data**
+This data consisted of performance data of each escalator within the NYC subway system. The table below describe the raw data set.
+
+| Data    | Type         | Description                                       |
+|:--------|:-------------|:-----------------------------------------------   |
+|Station  | string        |Indicates what station the data was collected at. |
+|NumEs    | double        |Amount of escalators at a station                 |
+|UpTime   | float         |Percentage of time the escalator was usable       |
+|Line     | [string]      |An array of strings of which subway lines were connected to that station|
+
+.
+
+**Data Munging and Analysis**
+A year's worth of txt files were pulled and combined into one csv file using python. However, once this file was created, it was too large for python the handle without having a memory error. Therefore, I imported to the csv to R and compelted this portion of the assignment. I then took the large csv file and decreased the size of it based on the amount stations that had at least one escalator. This reduced my number of stations from over 472 to 59 stations.
+
+I then used the data to create this table of average entries and exits over a year.
+![turnstileEntryExit](images/TotalAvgEntriesExitsTable.png)
+This table has all 59 stations represented. The cut above is just the first 15 stations. These first 15 stations were used to create the visualization shown below that compares the entries and exits of 15 stations. Also, this visualization allows viewers to see which stations have more riders than others.
+
+![turnstileEntryExit](images/TurnstileEntriesExits.png)
+
+The data set from the escalator performance was not only used to reduce the amount of data entries in the turnstile data set but also can be used to visualize which stations have better maintained escalators than other stations. Insterestingly, 59st is a fairly busy station according to the first visualization and based on the second visualization is has about 50% up time on the one escalator at that station. This could be a place to investigate in the data as bottleneck for congestion of patrons. 
+![turnstileEntryExit](images/NumEscalators.png)
+
+*Notes*
+The csv file created in python was too big to upload. If you want to recreate the csv you must run the python script found [**here**](analysis/turnstileCounts.py)
 
 
 ## (Part 3.2) -  Plotting 2D Random Number Generators **(15%)**
 
-This portion of the assignment looks at generating random numbers in Python and understanding how to properly plot them. Plot two different random numbers, pseudo random and quasi random, for five different N values. There should be 10 subplots, all properly formatted 2D plots. Note, each of the N points will have two coordinates, an x and a y, therefore you will need to generate two random numbers for each point. You should replace the image with your results in a simalar format. Discuss how the patterns differ. Feel free to change the N values from the suggested N values in the image to state your case.
+The image below describes the difference between using a pseudorandom number generator and a quasirandom number generator.
+
+A pseudorandom number generator will create point in the given range completely random. It has no information about other points created which creates uncorrelated plot points.  This creates the output shown on the top row.
+
+Quasirandom number generator will fill the given range uniformly. This type of number generation is constrained by knowledge of the other points previously generated. This creates a more uniformed output as shown in the second row.
 
 ![Image of 2d template City](images/RNG.png)
+
+*Notes*
+The top row was created using random class within python.
+The second row was created using sobol.
 
 
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
