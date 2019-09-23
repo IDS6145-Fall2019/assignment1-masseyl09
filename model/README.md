@@ -1,7 +1,5 @@
-## Smart City Model
+##Diagrams
 
-
-[**Object Diagram**](object_diagram.md) - provides the high level overview of components
-[**Class Diagram**](class_diagram.md) - provides details of (what are you providing details of)
-[**Behavior Diagram**](behavior_diagram.md) - provides details of (what are you providing details of)
-[**Agent / User case** (if appropriate)](agent_usecase_diagram.md) - provides details of (what are you providing details of)
+[**Object Diagram**](model/object_diagram.md) - provides the high level overview the relationship of the objects in this simulation
+[**Class Diagram**](model/class_diagram.md) - provides details of the classes in this simualtion
+[**Behavior Diagram**](model/behavior_diagram.md) - provides details of an activity diagram of a patron through the simulation
