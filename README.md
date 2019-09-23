@@ -103,11 +103,18 @@ You are expected to create the python files - the code should run without errors
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
 
 **Independent Variables**
- TODO Specify the independent and dependent input variables of your subway esclator model
+* Amount of patrons in the system
+* Speed of the escalator
+* Time of day
+* Amount of escalators
+* Length of escalator
+
 **Dependent Variables**
+* Time a patron is in the queue
+* Time a patron is on the escalator
 
 **Data:**
-The data used for this simulation are dervied from a subset of real data from [MTA Real Time Data Feeds.](http://web.mta.info/developers/developer-data-terms.html#data "MTA Data Page") In particular, *Turnstile Usage Data* and "*Performance Data*
+The data used for this simulation are dervied from a subset of real data from [MTA Real Time Data Feeds.](http://web.mta.info/developers/developer-data-terms.html#data "MTA Data Page") In particular, *Turnstile Usage Data* and *Performance Data.*
 
 **Analyzation of the Model:**
 R is a powerful tool that can handle large amount of data.  I plan on using R to analyze my data. In R, I will create the follow statistics:
@@ -125,9 +132,6 @@ The following charts may be used in the visualization of the data collected:
 * Comparison of stations using line graphs of wait time in queue over time
 
 Plot.ly may be leveraged to provide a way to illustrate the visualizations in a sharable dashboard.
-
-
-
 
 
 
@@ -207,9 +211,17 @@ The second row was created using sobol.
 
 ## (Part 3.3) -  Plotting 1D Random Distributions **(15%)**
 
-Now, choose three different distributions to plot in 1D, or as a histogram. Choose a pseudo-random generator and generate three different distributions. Example distributions are Uniform (part 8), Normal, Exponential, Poisson, and Chi-Squared, but feel free to use any three distributions of your choice. Again, plot each distribution for five different Ns. This will result in 15 different subplots, formatted similar to the image in Part 8. Include your properly formmated 1D plots below and breifly describe what we are looking at and how things change as N is changed.
+The section consists two plot groupings of random number generators. The first subplot group consists of pseudorandom number generation using three distribution types: uniform, normal, and exponential. As the amount of number generations grows, the historgrams begin to take the shape of their distibution type.
+
 ![Image of 1D template City Pseudo](images/1D_PD_RNG.png)
 
 
-Repeat the above using a quasi-random generator. Discuss the similarities and differences.
+
+The second subplot uses quasirandom number generation of the same three distributions used in the pseudorandom subplot above. Quasirandom number generator will fill the given range uniformly. This type of number generation is constrained by knowledge of the other points previously generated.
+
 ![Image of 1D template City Quasi](images/1D_QR_RNG.png)
+
+Thr first subplot using pseudorandom number generation does will generate numbers completely random. In the graphs with lower n values, you can see the distribution widespread and not distributed evenly. In the quasirandom number generation, the numbers are generated unformly based on the previously created numbers in the set. The will create a more even distrbution of numbers generated. Thus, reaching the desired shape of the distribution type quicker.
+
+
+
