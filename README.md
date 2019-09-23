@@ -155,7 +155,8 @@ This data consisted of performance data of each escalator within the NYC subway 
 A year's worth of txt files were pulled and combined into one csv file using python. However, once this file was created, it was too large for python the handle without having a memory error. Therefore, I imported to the csv to R and compelted this portion of the assignment. I then took the large csv file and decreased the size of it based on the amount stations that had at least one escalator. This reduced my number of stations from over 472 to 59 stations.
 
 I then used the data to create this table of average entries and exits over a year.
-![turnstileEntryExit](images/TotalAvgEntriesExitsTable.png)
+
+![turnstileEntryExit](images/TotalTable.png)
 
 This table has all 59 stations represented. The cut above is just the first 15 stations. These first 15 stations were used to create the visualization shown below that compares the entries and exits of 15 stations. Also, this visualization allows viewers to see which stations have more riders than others.
 
