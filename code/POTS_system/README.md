@@ -3,10 +3,7 @@ The POTS model simulates water and nutrient levels of containers of various vege
 
 The class diagram below provides the interaction each class in the software has with another and the internal variables and actions for a class.
 
-TODO describe the model
-
-(Remove: decribe the model here, use whatever diagram you need object, class, etc)
-
+In this model there is four vegetables that extend the vegetable class. Each of the vegetables have a different length and radius. The vegetables are populated in a container (this container could be a decorative one) that consists of only gardenmixsoil. However, in  the model there is other classes of soil that could be used (floirdasand, catcusmixsoil, and compost) Each teration of the simulation nutients from the soil and water deminishes. This eventually kills the plants.
 
 
 Class Diagram
