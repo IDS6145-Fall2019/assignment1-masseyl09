@@ -181,7 +181,7 @@ A year's worth of txt files were pulled and combined into one csv file using pyt
 
 I then used the data to create this table of average entries and exits over a year.
 
-![turnstileEntryExit](images/TotalTable.png)
+![turnstileEntryExit](images/TotalTable.PNG)
 
 This table has all 59 stations represented. The cut above is just the first 15 stations. These first 15 stations were used to create the visualization shown below that compares the entries and exits of 15 stations. Also, this visualization allows viewers to see which stations have more riders than others.
 
