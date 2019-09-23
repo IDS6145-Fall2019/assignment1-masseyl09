@@ -103,13 +103,13 @@ You are expected to create the python files - the code should run without errors
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
 
 **Independent Variables**
-
+ TODO Specify the independent and dependent input variables of your subway esclator model
 **Dependent Variables**
 
-**Data**
+**Data:**
 The data used for this simulation are dervied from a subset of real data from [MTA Real Time Data Feeds.](http://web.mta.info/developers/developer-data-terms.html#data "MTA Data Page") In particular, *Turnstile Usage Data* and "*Performance Data*
 
-**Analyzation of the Model**
+**Analyzation of the Model:**
 R is a powerful tool that can handle large amount of data.  I plan on using R to analyze my data. In R, I will create the follow statistics:
 * Averages time in queue by station
 * Maximum time in queue for each station
@@ -117,7 +117,7 @@ R is a powerful tool that can handle large amount of data.  I plan on using R to
 * Comparison across stations of means, max, and min amounts.
 
 
-**Visualiztion of the Data**
+**Visualiztion of the Data:**
 The following charts may be used in the visualization of the data collected:
 * Bar graph of amount of throughput at a station over time.
 * Bar graph of comparison of average throughput from all 59 stations
@@ -126,9 +126,8 @@ The following charts may be used in the visualization of the data collected:
 
 Plot.ly may be leveraged to provide a way to illustrate the visualizations in a sharable dashboard.
 
-(remove the below points once ideas are satisfied)
-* Specify the independent and dependent input variables of your subway esclator model
-* Specify where the data will come from measured subset of real data (empirical) or synthetic data
+
+
 
 
 
