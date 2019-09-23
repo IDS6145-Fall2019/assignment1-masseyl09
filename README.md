@@ -1,19 +1,18 @@
 # Assignment 1 - Designing Models and Analyzing Data 
-(remove: **text between brackets to be removed**)
 
 > * Participant name: Lauren Massey
-> * Project Title: (Title of the problem you are looking and modeling)
+> * Project Title: Subway Escalator Optimatization
 
 # General Introduction
 
 The first part of this assignment explores designing models (and basic Python/Git features). 
 
-We will look at **subway model in a city** system. A **subway system** is an underground, tube, or metro, underground railway system used to transport large numbers of passengers within urban and suburban areas - modern subways use different types of electronic data collection sensors to supply information which is used to manage assets and resources efficiently. 
+We will look at **subway model in a city** system. A **subway system** is an underground, tube, or metro, underground railway system used to transport large numbers of passengers within urban and suburban areas - modern subways use different types of electronic data collection sensors to supply information which is used to manage assets and resources efficiently.
 
 The second part of the assignment explores data analysis. Data analysis and visualization is key to both the input and output of simulations. This assignment explores different random number generators, distributions, visualizations, and statistics. Additionally, it will look at getting you accustomed to specifying input and output variables to a system. We will also practice working with real data.
 
 
-# Part 1: Designing a Model - Subway System
+# Part 1: Designing a Model -  Subway Escalator Optimization System
 
 New York City has an estimated population of 8,398,748, as of July 2018, that live within 306 square miles [1][2]. This creates a population desnisty of about 27,443.06 people per square mile][2]. The resulting congested streets of NYC have lead to the usage of an underground subway system. This subway system is a common way to travel efficently through the NYC and consists of 472 stations that serve 27 subway lines [2]. It is estimated that the average day rideship for the NYC subways system is 5,437,587 people[4]. The US Census Bureau estimates that NYC's population will continue to grow at a rate of 3% each year or approximately a population growth os 27,000 persons[1]. This evergrowing population will consquently put more demand on the NYC subway system.
 
@@ -55,7 +54,7 @@ However, finding details on the length of each escalator in the NYC subway syste
 ## (Part 1.1): Requirements (Experimental Design) **(10%)**
 
 **Problem**
-The throughput of riders in the NYC subway system can get congested at certain time intervals in a day. Optimizing the direction of the subway escalators may alleviate some of the congestion by providing more paths in a desired direction during peak hours.
+The throughput of riders in the NYC subway system can get congested at certain time intervals in a day. Optimizing the direction of the subway escalators and how people stand on escalators may alleviate the congestion by providing a smaller queue to and from the subway platform.
 
 **Requirements**
 * The simulation shall consist of at least one escalator.
@@ -69,13 +68,13 @@ The throughput of riders in the NYC subway system can get congested at certain t
 * The simulation shall not allow more than two patrons to occupy one step on an escalator.
 * The simulator shall allow for the following two tpes of patrons: standing, walking
 
-## (Part 1.2) Subway (My Problem) Model **(10%)**
+## (Part 1.2)  Subway Escalator Optimization Model **(10%)**
 
 * [**Object Diagram**](model/object_diagram.md) - provides the high level overview the relationship of the objects in this simulation
 * [**Class Diagram**](model/class_diagram.md) - provides details of the classes in this simualtion
 * [**Behavior Diagram**](model/behavior_diagram.md) - provides details of an activity diagram of a patron through the simulation
 
-## (Part 1.3) Subway (My Problem) Simulation **(10%)**
+## (Part 1.3) Subway Escalator Optimization Simulation **(10%)**
 
 **Type of Simualtion**
 Discrete Simulation
@@ -95,9 +94,7 @@ Overall, the goal is the increase the throughput of the stations by optimizing t
 
 
 ## (Part 1.4) Subway City (My Problem) Model **(10%)**
-[**Code template**](code/README.md) - Starting coding framework for the (insert your exact problem here.)
-You are expected to create the python files - the code should run without errors, create and object(s) for your system, but not provide function detail.
-
+[**Code template**](code/README.md) - This is the initial coding framework. The goal of this program is to optimize the direction of the subway escalators and how people stand on escalators to alleviate the congestion by providing a smaller queueto and from the subway platform.
 
 
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
