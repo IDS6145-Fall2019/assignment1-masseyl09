@@ -1,6 +1,6 @@
 ##Subway Escalator Optimatization Problem Code
 
-The source code is [**here.**](code/Subway_Mmodel/).
+The source code is [**here.**](code/Subway_Model/).
 
 Starting coding framework for the (insert your exact problem here.)
 You are expected to create the python files - the code should run without errors, create and object(s) for your system, but not provide function detail.
