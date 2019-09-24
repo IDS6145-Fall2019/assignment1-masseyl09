@@ -1,4 +1,5 @@
-##Subway Escalator Problem: Object Diagram
+#Subway Escalator Problem: Object Diagram
+
 
 The below diagram illustrates the basic relationships of objects in this subway escalator problem. The bulleted list below describes the relationships of the diagram.
 
