@@ -93,8 +93,10 @@ Discrete Simulation
 Overall, the goal is the increase the throughput of the stations by optimizing the usage of the escalators. Based on the amount of time a patron takes to transit through the simulation will indicate if changing the direction of the ecalators based on demand and the placement of patrons on the escalatos makes a difference.
 
 
-## (Part 1.4) Subway City (My Problem) Model **(10%)**
-[**Code template**](code/README.md) - This is the initial coding framework. The goal of this program is to optimize the direction of the subway escalators and how people stand on escalators to alleviate the congestion by providing a smaller queueto and from the subway platform.
+## (Part 1.4) Subway Escalator Optimization Model **(10%)**
+This is the initial coding framework. The goal of this program is to optimize the direction of the subway escalators and how people stand on escalators to alleviate the congestion by providing a smaller queueto and from the subway platform.
+
+More information can be found  here  ==> [**Code Explanation**](code/README.md)
 
 
 ## (Part 1.5) Specifying the Inputs to a System **(10%)**
@@ -131,13 +133,10 @@ The following charts may be used in the visualization of the data collected:
 Plot.ly may be leveraged to provide a way to illustrate the visualizations in a sharable dashboard.
 
 
-
-
-
 # Part 2: Creating a Model from Code
 
 ## (Part 2.1) **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model **(10%)**
-Here [**we provide an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model and provide a source code template for the code found in  [**the following folder**](code/POTS_system/).
+Here [**an overview**](code/POTS_system/README.md) of the **P**ortable **O**rganic **T**rouble-free **S**elf-watering System (**POTS**) Model is provided and the a source code can be found in  [**this folder**](code/POTS_system/).
 
 
 
